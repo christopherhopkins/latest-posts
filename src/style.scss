@@ -1,0 +1,29 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-chopkins-latest-posts-chopkins-latest-posts {
+	// reset
+	list-style: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow-wrap: anywhere;
+	@supports (display: flex) and (not (display: grid)) {
+		display: flex;
+	}
+	@supports (display: grid) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-auto-flow: row;
+		gap: 30px;
+	}
+	.attachment-post-thumbnail, 
+	img {
+		width: 100%;
+		height: auto;
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "chopkins-latest-posts/chopkins-latest-posts",
+	"version": "0.1.0",
+	"title": "Chopkins Latest Posts",
+	"category": "design",
+	"icon": "text-page",
+	"description": "Chopkins Latest Posts",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "chopkins-latest-posts",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"numberOfPosts": {
+			"type": "number",
+			"default": 3
+		},
+		"displayFeaturedImage": {
+			"type": "boolean",
+			"default": true
+		},
+		"taxonomy": {
+			"type": "string",
+			"default": "category"
+		},
+		"term": {
+			"type": "number",
+			"default": 1
+		},
+		"order": {
+			"type": "string",
+			"default": "desc"
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "date"
+		}
+	}
+}
